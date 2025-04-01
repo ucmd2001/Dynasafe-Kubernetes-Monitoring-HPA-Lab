@@ -6,6 +6,10 @@
 
 ---
 
+## 架構圖
+
+![Architecture Diagram](diagrams/architecture.png)
+
 ## 資料組織構造
 
 ```
