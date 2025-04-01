@@ -1,0 +1,19 @@
+# prometheus-values.yaml
+nodeExporter:
+  hostRootFsMount: true
+  tolerations: []
+  nodeSelector: {}
+
+kube-state-metrics:
+  nodeSelector:
+    role: infra
+  tolerations: []
+
+prometheus:
+  prometheusSpec:
+    nodeSelector:
+      role: infra
+    tolerations: []
+    serviceMonitorSelectorNilUsesHelmValues: false
+    podMonitorSelectorNilUsesHelmValues: false
+
